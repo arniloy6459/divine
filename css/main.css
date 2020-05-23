@@ -26,21 +26,21 @@ header .navbar-dark .navbar-toggler {
 header .navbar-dark .navbar-toggler-icon {
   background-image: url(../img/toggler/Untitled-2.png); }
 header .navbar-dark .navbar-nav .active .nav-link {
-  color: red; }
+  color: #d72323; }
 header .navbar-dark .navbar-nav .nav-link {
-  font-family: "orenbug";
+  font-family: 'Noticia Text', serif;
   text-align: center;
   font-size: 16px;
   margin-left: 10px;
   color: #fff; }
   header .navbar-dark .navbar-nav .nav-link:hover {
-    color: red;
+    color: #d72323;
     transition: all 0.5s ease-in-out; }
 header .dropdown-item {
-  font-family: "orenbug";
+  font-family: 'Noticia Text', serif;
   font-size: 14px; }
   header .dropdown-item:hover {
-    color: red; }
+    color: #d72323; }
 header .rounded-circle {
   height: 35px;
   width: 35px; }
@@ -57,11 +57,12 @@ header .card {
     margin: 15px 75px; }
   header .card .name {
     text-align: center;
-    font-family: "orenbug";
+    font-family: 'Noticia Text', serif;
     font-size: 14px;
     line-height: 0px; }
   header .card .mail {
     text-align: center;
+    font-family: 'Karla', sans-serif;
     font-size: 12px; }
   header .card .icon a {
     text-decoration: none;
@@ -80,30 +81,20 @@ header .offer {
 
 .eid_offer h2 {
   color: #000;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
-  position: relative;
-  font-family: "orenbug";
-  margin-top: 60px;
-  line-height: 0; }
-.eid_offer h2::after {
-  content: "";
-  width: 100px;
-  position: absolute;
-  margin: 0 auto;
-  height: 4px;
-  border-radius: 1px;
-  background: #000;
-  left: 0;
-  right: 0;
-  bottom: -20px; }
+  font-family: 'Noticia Text', serif;
+  margin-top: 60px; }
+.eid_offer .text {
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  margin: 0 auto; }
 .eid_offer .carousel {
   margin: 50px auto;
   padding: 0 70px; }
 .eid_offer .carousel .item {
-  color: #000;
   min-height: 325px;
-  font-family: "orenbug";
+  font-family: 'Noticia Text', serif;
   text-align: center;
   overflow: hidden; }
 .eid_offer .carousel .thumb-wrapper {
@@ -128,9 +119,11 @@ header .offer {
   left: 0;
   right: 0; }
 .eid_offer .carousel .item h4 {
-  font-size: 18px; }
-.eid_offer .carousel .item h4, .eid_offer .carousel .item p, .eid_offer .carousel .item ul {
-  margin-bottom: 5px; }
+  font-size: 18px;
+  font-family: 'Noticia Text', serif; }
+.eid_offer .carousel .item a, .eid_offer .carousel .item p, .eid_offer .carousel .item ul {
+  margin-bottom: 5px;
+  font-family: 'Karla', sans-serif; }
 .eid_offer .carousel .thumb-content .btn {
   color: #000;
   font-size: 11px;
@@ -203,12 +196,12 @@ header .offer {
   font-size: 16px;
   color: #abb0b8; }
 .eid_offer .carousel .wish-icon .fa-heart {
-  color: red; }
+  color: #d72323; }
 .eid_offer .star-rating li {
   padding: 0; }
 .eid_offer .star-rating i {
   font-size: 14px;
-  color: red; }
+  color: #d72323; }
 
 .slide_offer {
   margin: 40px; }
@@ -218,11 +211,12 @@ header .offer {
 .categories .headtext {
   color: #000;
   font-size: 30px;
-  font-family: "orenbug";
+  font-family: 'Noticia Text', serif;
   margin-top: 60px;
   line-height: 10px; }
 .categories .logo {
-  text-align: center; }
+  text-align: center;
+  font-family: 'Muli', sans-serif; }
 .categories .cataItem {
   padding-top: 10px; }
   .categories .cataItem .categorie-item {
@@ -235,9 +229,9 @@ header .offer {
     color: #000;
     text-align: inherit;
     white-space: nowrap;
-    font-family: "orenbug"; }
+    font-family: 'Karla', sans-serif; }
     .categories .cataItem .categorie-item:hover {
-      color: red;
+      color: #d72323;
       background-color: whitesmoke;
       transition: all 0.5s ease-in-out; }
 .categories .headtext2 {
@@ -245,30 +239,26 @@ header .offer {
   font-size: 30px;
   position: relative;
   text-align: center;
-  font-family: "orenbug";
+  font-family: 'Noticia Text', serif;
   margin-top: 60px;
   line-height: 10px; }
-.categories .headtext2::after {
-  content: "";
-  width: 100px;
-  position: absolute;
-  margin: 0 auto;
-  height: 4px;
-  border-radius: 1px;
-  background: #000;
-  left: 0;
-  right: 0;
-  bottom: -20px; }
+.categories .carousel .item h4 {
+  font-size: 18px;
+  font-family: 'Noticia Text', serif; }
+.categories .carousel .item a, .categories .carousel .item p, .categories .carousel .item ul {
+  margin-bottom: 5px;
+  font-family: 'Karla', sans-serif; }
 .categories .thumb-content .item-price {
   font-size: 10px; }
 
 .content {
   background: #000; }
   .content .head-content h1 {
-    font-family: "orenbug";
+    font-family: 'Noticia Text', serif;
     color: #fff; }
   .content .head-content p {
-    color: #fff; }
+    color: #fff;
+    font-family: 'Muli', sans-serif; }
   .content .body-content.gallery {
     columns: 5;
     column-gap: 10px;
@@ -322,26 +312,29 @@ header .offer {
   .content .contribute a {
     text-decoration: none;
     margin-top: 10px;
-    font-family: "orenbug"; }
+    font-family: 'Noticia Text', serif; }
     .content .contribute a:hover {
-      color: red;
+      color: #3e3636;
       transition: all 0.5s ease-in-out; }
 
 .summer_sale h2 {
   color: #000;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   position: relative;
-  font-family: "orenbug";
-  margin-top: 60px;
-  line-height: 0; }
+  font-family: 'Noticia Text', serif;
+  margin-top: 60px; }
+.summer_sale .text {
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  margin: 0 auto; }
 .summer_sale .carousel {
   margin: 50px auto;
   padding: 0 70px; }
 .summer_sale .carousel .item {
   color: #000;
   min-height: 325px;
-  font-family: "orenbug";
+  font-family: 'Noticia Text', serif;
   text-align: center;
   overflow: hidden; }
 .summer_sale .carousel .thumb-wrapper {
@@ -367,8 +360,9 @@ header .offer {
   right: 0; }
 .summer_sale .carousel .item h4 {
   font-size: 18px; }
-.summer_sale .carousel .item h4, .summer_sale .carousel .item p, .summer_sale .carousel .item ul {
-  margin-bottom: 5px; }
+.summer_sale .carousel .item a, .summer_sale .carousel .item p, .summer_sale .carousel .item ul {
+  margin-bottom: 5px;
+  font-family: 'Karla', sans-serif; }
 .summer_sale .carousel .thumb-content .btn {
   color: #000;
   font-size: 11px;
@@ -441,15 +435,19 @@ header .offer {
   font-size: 16px;
   color: #abb0b8; }
 .summer_sale .carousel .wish-icon .fa-heart {
-  color: red; }
+  color: #d72323; }
 .summer_sale .star-rating li {
   padding: 0; }
 .summer_sale .star-rating i {
   font-size: 14px;
-  color: red; }
+  color: #d72323; }
 
 .about h1 {
-  font-family: "orenbug"; }
+  font-family: 'Noticia Text', serif; }
+.about .text {
+  font-family: 'Karla', sans-serif; }
+.about .text2 {
+  font-family: 'Muli', sans-serif; }
 .about .timeline {
   list-style: none;
   padding: 20px 0 20px;
@@ -565,10 +563,13 @@ header .offer {
   z-index: 99999; }
 .about .tl-heading h4 {
   margin: 0;
-  color: red;
-  font-family: "orenbug"; }
+  color: #d72323;
+  font-family: 'Noticia Text', serif; }
 .about .tl-body p, .about .tl-body ul {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-family: 'Karla', sans-serif; }
+.about .tl-body button {
+  font-family: 'Karla', sans-serif; }
 .about .tl-body > p + p {
   margin-top: 5px; }
 
