@@ -27,6 +27,8 @@ header .navbar-dark .navbar-toggler-icon {
   background-image: url(../img/toggler/Untitled-2.png); }
 header .navbar-dark .navbar-nav .active .nav-link {
   color: #d72323; }
+  header .navbar-dark .navbar-nav .active .nav-link:hover {
+    color: #d72323; }
 header .navbar-dark .navbar-nav .nav-link {
   font-family: 'Noticia Text', serif;
   text-align: center;
@@ -34,7 +36,7 @@ header .navbar-dark .navbar-nav .nav-link {
   margin-left: 10px;
   color: #fff; }
   header .navbar-dark .navbar-nav .nav-link:hover {
-    color: #d72323;
+    color: #e3c4a8;
     transition: all 0.5s ease-in-out; }
 header .dropdown-item {
   font-family: 'Noticia Text', serif;
