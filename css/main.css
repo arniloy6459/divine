@@ -206,9 +206,9 @@ header .offer {
   color: #d72323; }
 
 .slide_offer {
-  margin: 40px; }
+  margin: 50px 0; }
   .slide_offer img {
-    height: 70vh; }
+    height: 80vh; }
 
 .categories .headtext {
   color: #000;
@@ -565,11 +565,13 @@ header .offer {
   z-index: 99999; }
 .about .tl-heading h4 {
   margin: 0;
-  color: #d72323;
+  color: #000;
+  font-size: 30px;
   font-family: 'Noticia Text', serif; }
 .about .tl-body p, .about .tl-body ul {
   margin-bottom: 0;
-  font-family: 'Karla', sans-serif; }
+  font-family: 'Muli', sans-serif;
+  font-size: 18px; }
 .about .tl-body button {
   font-family: 'Karla', sans-serif; }
 .about .tl-body > p + p {
