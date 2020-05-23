@@ -1,0 +1,794 @@
+$text-color: #fff;
+$SecondText-color: #000;
+$hoverText: red;
+
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@font-face{
+    font-family: "orenbug";
+    src: url(../text/orenburg/Orenburg-Bold.ttf);
+}
+@font-face{
+    font-family: "orenbug_regular";
+    src: url(../text/orenburg/Orenburg.ttf);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+// Header
+header{ 
+  .navbar-dark{
+    background-color: $SecondText-color;
+  }
+  .navbar .navbar-brand{
+    margin: 5px;
+    padding: 10px 30px 0px 30px;
+    font-family: "orenbug";
+    font-size: 41px;
+    line-height: 25px;
+    
+    .tag{
+      margin: 0px;
+      font-family: "orenbug_regular";
+      font-size: 20px;
+    }
+  }
+  .navbar-dark .navbar-toggler{
+    color: $text-color;
+    border-color: $text-color;
+  }
+  .navbar-dark .navbar-toggler-icon {
+    background-image: url(../img/toggler/Untitled-2.png);
+  }
+  .navbar-dark .navbar-nav .active .nav-link{
+    color: $hoverText;
+  }
+  .navbar-dark .navbar-nav .nav-link{
+    font-family: "orenbug";
+    text-align: center;
+    font-size: 16px;
+    margin-left: 10px;
+    color: $text-color;
+
+    &:hover{
+      color: $hoverText;
+      @include transition-ease;
+    }
+  }
+  .dropdown-item{
+    font-family: "orenbug";
+    font-size: 14px;
+
+    &:hover{
+      color: $hoverText;
+    }
+  }
+  .rounded-circle{
+    height: 35px;
+    width: 35px;
+  }
+  .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 200px;
+    margin: 5px;
+    text-align: center;
+    font-family: arial;
+    .rounded-circle{
+      height: 50px;
+      width: 50px;
+      align-items: center;
+      margin: 15px 75px;
+    }
+    .name{
+      text-align: center;
+      font-family: "orenbug";
+      font-size: 14px;
+      line-height: 0px;
+    }
+    .mail{
+      text-align: center;
+      font-size: 12px;
+    }
+    .icon a{
+      text-decoration: none;
+      font-size: 22px;
+      color: black;
+
+      &:hover{
+        opacity: 0.7;
+        @include transition-ease;
+      }
+    }
+  }
+  .head_body{
+    background: $SecondText-color;
+    height: 100%;
+  }
+  .offer{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+// Eid Offer
+.eid_offer{
+
+  h2 {
+    color: $SecondText-color;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    font-family: "orenbug";
+    margin-top: 60px;
+    line-height: 0;
+  }
+  h2::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    margin: 0 auto;
+    height: 4px;
+    border-radius: 1px;
+    background: $SecondText-color;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+  }
+  .carousel {
+    margin: 50px auto;
+    padding: 0 70px;
+  }
+  .carousel .item {
+    color: $SecondText-color;
+    min-height: 325px;
+    font-family: "orenbug";
+    text-align: center;
+    overflow: hidden;
+  }
+  .carousel .thumb-wrapper {
+    padding: 25px 15px;
+    background: #fff;
+    border-radius: 6px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+  }
+  .carousel .item .img-box {
+    height: 120px;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+  }
+  .carousel .item img {	
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  .carousel .item h4 {
+    font-size: 18px;
+  }
+  .carousel .item h4, .carousel .item p, .carousel .item ul {
+    margin-bottom: 5px;
+  }
+  .carousel .thumb-content .btn {
+    color: $SecondText-color;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: bold;
+      background: none;
+      border: 1px solid $SecondText-color;
+      padding: 6px 14px;
+      margin-top: 5px;
+      line-height: 16px;
+      border-radius: 20px;
+  }
+  .carousel .thumb-content .btn:hover, .carousel .thumb-content .btn:focus {
+    color: $text-color;
+    background: $SecondText-color;
+    box-shadow: none;
+  }
+  .carousel .thumb-content .btn i {
+    font-size: 14px;
+      font-weight: bold;
+      margin-left: 5px;
+  }
+  .carousel .carousel-control {
+    height: 44px;
+    width: 40px;
+    background: $SecondText-color;	
+      margin: auto 0;
+      border-radius: 4px;
+    opacity: 0.8;
+  }
+  .carousel .carousel-control:hover {
+    background: blak;
+    opacity: 1;
+  }
+  .carousel .carousel-control i {
+      font-size: 36px;
+      position: absolute;
+      top: 50%;
+      display: inline-block;
+      margin: -19px 0 0 0;
+      z-index: 5;
+      left: 0;
+      right: 0;
+      color: $text-color;
+    text-shadow: none;
+      font-weight: bold;
+  }
+  .carousel .item-price {
+    font-size: 13px;
+    padding: 2px 0;
+  }
+  .carousel .item-price strike {
+    opacity: 0.7;
+    margin-right: 5px;
+  }
+  .carousel .carousel-control.left i {
+    margin-left: -2px;
+  }
+  .carousel .carousel-control.right i {
+    margin-right: -4px;
+  }
+  .carousel .carousel-indicators {
+    bottom: -50px;
+  }
+  .carousel-indicators li, .carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+    border-radius: 50%;
+    border: none;
+  }
+  .carousel-indicators li {	
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .carousel-indicators li.active {	
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .carousel .wish-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 99;
+    cursor: pointer;
+    font-size: 16px;
+    color: #abb0b8;
+  }
+  .carousel .wish-icon .fa-heart {
+    color: $hoverText;
+  }
+  .star-rating li {
+    padding: 0;
+  }
+  .star-rating i {
+    font-size: 14px;
+    color: $hoverText;
+  }
+}
+
+// slide
+.slide_offer{
+  margin: 40px;
+
+  img{
+    height: 70vh;
+  }
+}
+
+// Categories & 50% Discount
+.categories{
+  .headtext{
+    color: $SecondText-color;
+    font-size: 30px;
+    font-family: "orenbug";
+    margin-top: 60px;
+    line-height: 10px;
+  }
+  .logo{
+    text-align: center;
+  }
+  .cataItem{
+    padding-top: 10px;
+
+    .categorie-item {
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      padding: .25rem 0.5rem;
+      clear: both;
+      font-weight: 400;
+      color: $SecondText-color;
+      text-align: inherit;
+      white-space: nowrap;
+      font-family: "orenbug";
+
+      &:hover{
+        color: $hoverText;
+        background-color: whitesmoke;
+        @include transition-ease;
+      }
+    }
+  }
+  .headtext2{
+    color: $SecondText-color;
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+    font-family: "orenbug";
+    margin-top: 60px;
+    line-height: 10px;
+  }
+  .headtext2::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    margin: 0 auto;
+    height: 4px;
+    border-radius: 1px;
+    background: $SecondText-color;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+  }
+  .thumb-content{
+    .item-price{
+      font-size: 10px;
+    }
+  }
+}
+
+// Global Collection
+.content{
+  background: $SecondText-color;
+
+  .head-content h1{
+    font-family: "orenbug";
+    color: $text-color;
+  }
+
+  .head-content p{
+    color: $text-color;
+  }
+
+  .body-content.gallery {
+    columns: 5;
+    column-gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .box-content {
+    z-index: -1;
+    width: 100%;
+    overflow: hidden;
+    break-inside: avoid;
+    background-color: $text-color;
+    border: 1px solid $SecondText-color;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 3px 5px rgba(0,0,0,0.2);
+    
+  }
+  .box-content .image img {
+    max-width: 100%;
+  }
+  
+  .box-content .title {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    align-items: center;
+  }
+  
+  .box-content .image:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.219);
+    display: none;
+  }
+  
+  .box-content .image:hover::before {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .box-content .title a {
+    color: $SecondText-color;
+  }
+  
+  .contribute {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contribute .profile-picture {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  
+  .contribute .profile-picture img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+
+  .contribute a{
+    text-decoration: none;
+    margin-top: 10px;         
+    font-family: "orenbug";
+
+    &:hover{
+      color: $hoverText;
+      @include transition-ease;
+    }
+  }
+}
+
+// Summer Sale
+.summer_sale{
+
+  h2 {
+    color: $SecondText-color;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    font-family: "orenbug";
+    margin-top: 60px;
+    line-height: 0;
+  }
+  .carousel {
+    margin: 50px auto;
+    padding: 0 70px;
+  }
+  .carousel .item {
+    color: $SecondText-color;
+    min-height: 325px;
+    font-family: "orenbug";
+    text-align: center;
+    overflow: hidden;
+  }
+  .carousel .thumb-wrapper {
+    padding: 25px 15px;
+    background: #fff;
+    border-radius: 6px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+  }
+  .carousel .item .img-box {
+    height: 120px;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+  }
+  .carousel .item img {	
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  .carousel .item h4 {
+    font-size: 18px;
+  }
+  .carousel .item h4, .carousel .item p, .carousel .item ul {
+    margin-bottom: 5px;
+  }
+  .carousel .thumb-content .btn {
+    color: $SecondText-color;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: bold;
+      background: none;
+      border: 1px solid $SecondText-color;
+      padding: 6px 14px;
+      margin-top: 5px;
+      line-height: 16px;
+      border-radius: 20px;
+  }
+  .carousel .thumb-content .btn:hover, .carousel .thumb-content .btn:focus {
+    color: $text-color;
+    background: $SecondText-color;
+    box-shadow: none;
+  }
+  .carousel .thumb-content .btn i {
+    font-size: 14px;
+      font-weight: bold;
+      margin-left: 5px;
+  }
+  .carousel .carousel-control {
+    height: 44px;
+    width: 40px;
+    background: $SecondText-color;	
+      margin: auto 0;
+      border-radius: 4px;
+    opacity: 0.8;
+  }
+  .carousel .carousel-control:hover {
+    background: blak;
+    opacity: 1;
+  }
+  .carousel .carousel-control i {
+      font-size: 36px;
+      position: absolute;
+      top: 50%;
+      display: inline-block;
+      margin: -19px 0 0 0;
+      z-index: 5;
+      left: 0;
+      right: 0;
+      color: $text-color;
+    text-shadow: none;
+      font-weight: bold;
+  }
+  .carousel .item-price {
+    font-size: 13px;
+    padding: 2px 0;
+  }
+  .carousel .item-price strike {
+    opacity: 0.7;
+    margin-right: 5px;
+  }
+  .carousel .carousel-control.left i {
+    margin-left: -2px;
+  }
+  .carousel .carousel-control.right i {
+    margin-right: -4px;
+  }
+  .carousel .carousel-indicators {
+    bottom: -50px;
+  }
+  .carousel-indicators li, .carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+    border-radius: 50%;
+    border: none;
+  }
+  .carousel-indicators li {	
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .carousel-indicators li.active {	
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .carousel .wish-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 99;
+    cursor: pointer;
+    font-size: 16px;
+    color: #abb0b8;
+  }
+  .carousel .wish-icon .fa-heart {
+    color: $hoverText;
+  }
+  .star-rating li {
+    padding: 0;
+  }
+  .star-rating i {
+    font-size: 14px;
+    color: $hoverText;
+  }
+}
+
+// about timeline
+.about{
+
+  h1{
+    font-family: "orenbug";
+  }
+  .timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+    &:before {
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      content: " ";
+      width: 3px;
+      background-color: #eee;
+      left: 50%;
+      margin-left: -1.5px;
+    }
+  }
+  .tldate {
+    display: block;
+    width: 200px;
+    background: #a50303;
+    border: 1px solid #a50303;
+    border-radius: 50px;
+    color: #ededed;
+    margin: 0 auto;
+    padding: 3px 0;
+    font-weight: bold;
+    text-align: center;
+  }
+  .tldate2 {
+      display: block;
+      width: 160px;
+      background: #5f5d5d;
+      border: 1px solid #5f5d5d;
+      border-radius: 50px;
+      color: #ededed;
+      margin: 0 auto;
+      padding: 3px 0;
+      font-weight: bold;
+      text-align: center;
+    }
+
+  .timeline li {
+    margin-bottom: 25px;
+    position: relative;
+  
+    &:before, &:after {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+    &:before, &:after {
+      content: " ";
+      display: table;
+    }
+  }  
+  .timeline li .timeline-panel {
+    width: 46%;
+    float: left;
+    background: #fff;
+    border: 1px solid #d4d4d4;
+    padding: 20px;
+    position: relative;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  }
+  .timeline li .timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+  }
+  .timeline li .timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+  }
+  .timeline li .timeline-panel.noarrow:before, .timeline li .timeline-panel.noarrow:after {
+    top:0;
+    right:0;
+    display: none;
+    border: 0;
+  }
+  .timeline li.timeline-inverted .timeline-panel {
+    float: right;
+  }
+  .timeline li.timeline-inverted .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+  .timeline li.timeline-inverted .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+  .timeline li .tl-circ {
+    position: absolute;
+    top: 23px;
+    left: 50%;
+    text-align: center;
+    background: #6a8db3;
+    color: $text-color;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: -16px;
+    border: 3px solid #90acc7;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    z-index: 99999;
+  }
+  .tl-heading h4 {
+    margin: 0;
+    color: $hoverText;
+    font-family: "orenbug";
+  }
+  .tl-body p, .tl-body ul {
+    margin-bottom: 0;
+  }
+  .tl-body > p + p {
+    margin-top: 5px;
+  }
+}
+
+
+
+
+
+
+@keyframes myMove {
+  0% {
+      opacity: 100;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+/* responsive breakpoint */
+@media screen and (max-width:1200px) {
+  .content .body-content.gallery {
+      columns: 3;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  .content .body-content.gallery {
+      columns: 2;
+  }
+
+}
+
+@media screen and (max-width:576px) {
+  .content .body-content.gallery {
+      columns: 1;
+  }
+
+}
